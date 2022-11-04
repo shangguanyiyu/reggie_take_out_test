@@ -67,7 +67,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Orders> implement
 
         AtomicInteger amount = new AtomicInteger(0);
 /*
-* OrderDetail订单明细
+* OrderDetail订单明细:使用Git
 * */
         List<OrderDetail> orderDetails = shoppingCarts.stream().map((item) -> {
             OrderDetail orderDetail = new OrderDetail();
