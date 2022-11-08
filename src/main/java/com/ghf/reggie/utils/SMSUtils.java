@@ -120,7 +120,7 @@ public class SMSUtils {
 			req.setPhoneNumberSet(phoneNumberSet);
 
 			/* 用户的 session 内容（无需要可忽略）: 可以携带用户侧 ID 等上下文信息，server 会原样返回 */
-			String sessionContext = param;
+			String sessionContext = "同学您好，恭喜您通过中国石油广东石化的简历筛选，现邀请您参加面试。面试时间：11月4日[下午][07：15-07：30]；面试形式：采用腾讯会议进行线上面试，会议号：[711-947-270]。请您提前准备好身份证原件，并下载安装好腾讯会议客户端，并修改备注为真实姓名，提前上线调试好设备，请勿迟到。确认参加请回复“确认+姓名”，不参加请回复“不参加”。预祝您面试顺利！";
 			req.setSessionContext(sessionContext);
 
 //			/* 短信码号扩展号（无需要可忽略）: 默认未开通，如需开通请联系 [腾讯云短信小助手] */

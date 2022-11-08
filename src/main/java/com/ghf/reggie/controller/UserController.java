@@ -30,7 +30,7 @@ public class UserController {
         final String phone = user.getPhone();
         if(!StringUtils.isEmpty(phone)){
             final String code = ValidateCodeUtils.generateValidateCode(4).toString();
-//            SMSUtils.sendMessage("羿星阁小程序","",phone,code);
+            SMSUtils.sendMessage("羿星阁小程序","",phone,code);
             log.info("code={}",code);
 
             session.setAttribute(phone,code);
