@@ -14,6 +14,8 @@ import com.ghf.reggie.service.SetmealService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,6 +43,7 @@ public class SetmealController {
     /*
     * 参数是json格式的，所以要用@RequestBody
     * */
+    @CacheEvict(value ="SetmealCache",allEntries = true ) /*allEntries = true  删除SetmealCache分类下的所有*/
     @PostMapping
     public R<String > save(@RequestBody SetmealDto setmealDto, HttpServletRequest request){
         log.info(setmealDto.toString());
@@ -113,6 +116,7 @@ required：默认是true，也就是说，你不显示定义required=false，那
 defaultValue：表示默认值的意思，如果你不传参，也可以通过，因为defaultValue起到了作用。
 
     * */
+    @CacheEvict(value ="SetmealCache",allEntries = true ) /*allEntries = true  删除SetmealCache分类下的所有*/
     @DeleteMapping
     public R<String > delete(@RequestParam List<Long>  ids){
     log.info(ids.toString());
@@ -134,6 +138,7 @@ defaultValue：表示默认值的意思，如果你不传参，也可以通过�
 //        final List<Setmeal> list = setmealService.list(categoryLambdaQueryWrapper);
 //        return R.success(list);
 //    }
+    @Cacheable(value = "SetmealCache",key = "#setmeal.categoryId+'_'+#setmeal.status")
     @GetMapping("/list")
     public R<List<Setmeal>> list(Setmeal setmeal){
         /*

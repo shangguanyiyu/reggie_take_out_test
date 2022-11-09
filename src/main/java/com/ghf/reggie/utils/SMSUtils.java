@@ -107,7 +107,7 @@ public class SMSUtils {
 
 			/* 模板 ID: 必须填写已审核通过的模板 ID */
 			// 模板 ID 可前往 [国内短信](https://console.cloud.tencent.com/smsv2/csms-template) 或 [国际/港澳台短信](https://console.cloud.tencent.com/smsv2/isms-template) 的正文模板管理查看
-			String templateId = "1594189";
+			String templateId = "1597594";
 			req.setTemplateId(templateId);
 
 			/* 模板参数: 模板参数的个数需要与 TemplateId 对应模板的变量个数保持一致，若无模板参数，则设置为空 */
