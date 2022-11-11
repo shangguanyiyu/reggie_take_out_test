@@ -11,6 +11,10 @@ import com.ghf.reggie.entity.SetmealDish;
 import com.ghf.reggie.service.CategoryService;
 import com.ghf.reggie.service.SetmealDishService;
 import com.ghf.reggie.service.SetmealService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +31,7 @@ import java.util.stream.Collectors;
 *1、RestController
 * 2、RequestMapping()
 * */
+@Api("套餐相关接口")
 @RestController
 @RequestMapping("/setmeal")
 @Slf4j
@@ -58,6 +63,13 @@ public class SetmealController {
     /*
     * 分页信息查询
     * */
+    @ApiOperation("套餐分页查询接口")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "page",value = "page是页码",required = true),
+            @ApiImplicitParam(name = "pageSize",value = "pageSize是页范围",required = true),
+            @ApiImplicitParam(name = "name",value = "name是名字",required = false),
+
+            })
     @GetMapping("/page")
     public R<Page> page(int page,int pageSize,String name){
         log.info("page={},pageSize={},name={}",page,pageSize,name);

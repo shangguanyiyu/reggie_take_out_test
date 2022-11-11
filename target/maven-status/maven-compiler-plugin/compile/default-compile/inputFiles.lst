@@ -17,7 +17,6 @@ E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\mapper\CategoryMap
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\entity\Setmeal.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\controller\AddressBookController.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\entity\Category.java
-E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\utils\JavaRedisTest.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\controller\UserController.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\entity\AddressBook.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\dto\DishDto.java
@@ -66,5 +65,6 @@ E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\service\SetmealDis
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\service\impl\AddressBookServiceImpl.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\service\impl\DishFlavorServiceImpl.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\entity\Employee.java
+E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\config\RedisConfig.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\entity\OrderDetail.java
 E:\mavenprojects\reggie_take_out\src\main\java\com\ghf\reggie\common\R.java

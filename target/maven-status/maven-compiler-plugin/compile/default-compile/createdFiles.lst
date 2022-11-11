@@ -1,3 +1,4 @@
+com\ghf\reggie\config\RedisConfig.class
 com\ghf\reggie\service\DishService.class
 com\ghf\reggie\controller\CategoryController.class
 com\ghf\reggie\controller\OrderController.class
@@ -12,7 +13,6 @@ com\ghf\reggie\common\MyMetaObjectHandler.class
 com\ghf\reggie\utils\ValidateCodeUtils.class
 com\ghf\reggie\service\ShoppingCartService.class
 com\ghf\reggie\dto\SetmealDto.class
-com\ghf\reggie\utils\JavaRedisTest.class
 com\ghf\reggie\controller\EmployeeController.class
 com\ghf\reggie\entity\OrderDetail.class
 com\ghf\reggie\config\WebMvcConfig.class
