@@ -1,6 +1,7 @@
 package com.ghf.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.ghf.reggie.common.BaseContext;
 import com.ghf.reggie.common.R;
 import com.ghf.reggie.config.RedisConfig;
 import com.ghf.reggie.entity.User;
@@ -82,6 +83,7 @@ public class UserController {
                 userService.save(user);
             }
             session.setAttribute("user",user.getId());
+            BaseContext.setCurrentId(user.getId());
             /*
             * 登录成功，删除缓存验证码
             * */

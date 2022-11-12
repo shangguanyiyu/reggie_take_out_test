@@ -16,7 +16,7 @@ import java.io.IOException;
 * 拦截器防止直输网址进入（用户是否已完成登录）
 * */
 @Slf4j
-//@WebFilter(filterName = "loginCheckFilter",urlPatterns = "/*")/*拦截所有请求*/
+@WebFilter(filterName = "loginCheckFilter",urlPatterns = "/*")/*拦截所有请求*/
 public class loginCheckFilter implements Filter {
     public static final AntPathMatcher PATH_MATCHER= new AntPathMatcher();/*Spring 提供的路径匹配器*/
     @Override/*实现过滤*/

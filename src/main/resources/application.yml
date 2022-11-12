@@ -22,7 +22,7 @@ spring:
       slave:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://192.168.31.145:3308/mysql?useSSL=false        #rw?characterEncoding-utf-8
+        url: jdbc:mysql://192.168.31.145:3308/mysql        #rw?characterEncoding-utf-8
         username: root
         password: 123456
     masterslave:
@@ -58,4 +58,4 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 reggie:
-  path: /home/ubuntu/Documents/imgDir/
+  path: D:\reggie\imgDir\
